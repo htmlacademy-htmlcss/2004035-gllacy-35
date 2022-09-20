@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Виктор Сенюков](https://up.htmlacademy.ru/htmlcss/35/user/2004035).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
