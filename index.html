@@ -16,7 +16,7 @@
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="cargo.html">Доставка и оплата</a>
+            <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О компании</a>
@@ -186,6 +186,29 @@
             </form>
           </div>
         </aside>
+      </section>
+
+      <section class="delivery">
+        <div class="delivery-block">
+          <h2 class="section-block-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-block-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p>
+            <label class="delivery-form-label" for="delivery-form-data">Дата</label>
+            <input class="delivery-form-input" type="text" id="delivery-form-data" name="delivery-data" placeholder="01.04.2020">
+          </p>
+          <p>
+            <label class="delivery-form-label" for="delivery-form-phone">Телефон</label>
+            <input class="delivery-form-input" type="text" id="delivery-form-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+          </p>
+          <p>
+            <label class="delivery-form-label" for="delivery-form-addres">Адрес</label>
+            <input class="delivery-form-input" type="text" id="delivery-form-addres" name="delivery-addres" placeholder="ул. Большая Конюшенная, 19/8">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
 
     </main>
