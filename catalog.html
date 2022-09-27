@@ -31,11 +31,11 @@
             <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="" alt="Иконка входа">Вход</a>
+            <a class="navigation-link" href="#"><img src="#" alt="Иконка входа">Вход</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="" alt="Иконка корзины">
+              <img src="#" alt="Иконка корзины">
               <span class="visually-hidden">Корзина</span>
               2 товара
             </a>
@@ -56,39 +56,59 @@
       </section>
 
       <section class="filter">
+      <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
+          <div>
             <label class="filter-form-label" for="filter-sorting">Сортировка:</label>
             <select class="filter-form-select" name="filter-sorting" id="filter-sorting">
               <option value="good">по популярности</option>
               <option value="min">сначала дешёвле</option>
               <option value="max">сначала дороже</option>
             </select>
-          </p>
-          <p>
+          </div>
+          <div>
             <label class="filter-form-label" for="filter-price">Цена: 100 ₽ – 500 ₽</label>
-            <input class="filter-form-select" type="range" name="filter-price" id="filter-price" min="10" max="1500" step="50" value="100" multiple>
-          </p>
-          <p>
+            <input class="filter-form-select" type="range" name="filter-price" id="filter-price" min="10" max="1500" step="50" value="100">
+          </div>
+          <div>
             <label class="filter-form-label">Жирность:</label>
-            <p><input class="filter-form-radio" type="radio" name="filter-fat" id="filter-fat" value="0">0%</p>
-            <p><input class="filter-form-radio" type="radio" name="filter-fat" id="filter-fat" value="10-" checked>до 10%</p>
-            <p><input class="filter-form-radio" type="radio" name="filter-fat" id="filter-fat" value="30-">до 30%</p>
-            <p><input class="filter-form-radio" type="radio" name="filter-fat" id="filter-fat" value="30+">выше 30%</p>
-          </p>
-          <p>
+              <label class="filter-form-group">
+                <input class="filter-form-radio" type="radio" name="filter-fat" value="0">0%
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-radio" type="radio" name="filter-fat" value="10-" checked>до 10%
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-radio" type="radio" name="filter-fat" value="30-">до 30%
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-radio" type="radio" name="filter-fat" value="30+">выше 30%
+              </label>
+          </div>
+          <div>
             <label class="filter-form-label">Наполнители:</label>
-            <p><input class="filter-form-check" type="checkbox" name="filter-filler" id="filter-filler" value="chocolate" checked>шоколадные</p>
-            <p><input class="filter-form-check" type="checkbox" name="filter-filler" id="filter-filler" value="sugar" checked>сахарные посыпки</p>
-            <p><input class="filter-form-check" type="checkbox" name="filter-filler" id="filter-filler" value="fruits">фрукты</p>
-            <p><input class="filter-form-check" type="checkbox" name="filter-filler" id="filter-filler" value="syrups">сиропы</p>
-            <p><input class="filter-form-check" type="checkbox" name="filter-filler" id="filter-filler" value="jams">джемы</p>
-          </p>
+              <label class="filter-form-group">
+                <input class="filter-form-check" type="checkbox" name="filter-filler" value="chocolate" checked>шоколадные
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-check" type="checkbox" name="filter-filler" value="sugar" checked>сахарные посыпки
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-check" type="checkbox" name="filter-filler" value="fruits">фрукты
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-check" type="checkbox" name="filter-filler" value="syrups">сиропы
+              </label>
+              <label class="filter-form-group">
+                <input class="filter-form-check" type="checkbox" name="filter-filler" value="jams">джемы
+              </label>
+          </div>
           <button class="filter-button" type="submit">Применить</button>
         </form>
       </section>
 
       <section class="cards">
+      <h2 class="visually-hidden">Карточки товаров</h2>
         <ol class="card-list">
           <li class="card-item">
             <h3 class="card-item-title">Малинка</h3>
@@ -205,11 +225,21 @@
         <div>
           <button><img src="#" alt="Предыдущая страница"></button>
           <ul class="pagination-list">
-            <li class="pagination-item">1</li>
-            <li class="pagination-item">2</li>
-            <li class="pagination-item pagination-item-active">3</li>
-            <li class="pagination-item">4</li>
-            <li class="pagination-item">5</li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-item-link">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-item-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-item-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-item-link">4</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-item-link">5</a>
+            </li>
           </ul>
           <button><img src="#" alt="Следующая страница"></button>
         </div>
@@ -219,6 +249,7 @@
 
     <footer class="page-footer">
       <section class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram Академии</span></a>
@@ -232,6 +263,7 @@
         </ul>
       </section>
       <section class="footer-menu">
+      <h2 class="visually-hidden">Меню</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item"><b>Для поставщиков</b></li>
           <li class="footer-menu-item">О производстве</li>
@@ -240,6 +272,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
+      <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/"><img src="#" alt="htmlacademy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>

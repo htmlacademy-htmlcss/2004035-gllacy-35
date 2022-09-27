@@ -7,9 +7,7 @@
   <body>
 
     <header class="page-header">
-      <a href="index.html">
         <img src="#" alt="Логотип Глейси Shop">
-      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -31,11 +29,11 @@
             <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="" alt="Иконка входа">Вход</a>
+            <a class="navigation-link" href="#"><img src="#" alt="Иконка входа">Вход</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="" alt="Иконка корзины">
+              <img src="#" alt="Иконка корзины">
               <span class="visually-hidden">Корзина</span>
               2 товара
             </a>
@@ -48,6 +46,7 @@
       <h1 class="visually-hidden">Магазин Глейси</h1>
 
       <section class="slider">
+      <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider-text">
           <b class="slider-text-title">Нежный пломбирс<br>клубничным джемом</b>
           <p class="slider-text-text">
@@ -56,7 +55,7 @@
           <a class="slider-text-button" href="#">Заказать</a>
         </div>
         <div class="slider-block">
-          <img class="slider-block-img sider-img-active" src="#" alt="Мороженое с красным шариком">
+          <img class="slider-block-img slider-img-active" src="#" alt="Мороженое с красным шариком">
           <img class="slider-block-img" src="#" alt="Мороженое с жёлтым шариком">
           <img class="slider-block-img" src="#" alt="Мороженое с разноцветными шариками">
         </div>
@@ -96,7 +95,7 @@
           <li class="banner-item">
             <div class="banner-item-block-text">
               <b class="banner-item-title">Маршмеллоу даром!</b>
-              <p class="banner-item-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <p class="banner-item-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
               <a class="banner-item-btn" href="#">Хочу подарок</a>
             </div>
             <img class="banner-item-img" src="#" alt="Маршмеллоу в рожке">
@@ -173,19 +172,18 @@
       </section>
 
       <section class="other">
+      <h2 class="visually-hidden">Другие новости</h2>
         <aside class="news">
           <p class="news-text">Новое в нашем блоге</p>
           <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
         </aside>
         <aside class="subscription subscription-border">
-          <div class="subscription">
-            <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input" type="email" name="email" id="" placeholder="email@example.com">
-              <button class="button" type="submit">Отправить</button>
-            </form>
-          </div>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="subscription-text" for="subscription-emain">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </label>
+            <input class="input" type="email" name="email" id="subscription-emain" placeholder="email@example.com">
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </aside>
       </section>
 
@@ -196,15 +194,15 @@
         </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <p>
+          <p class="delivery-form-block">
             <label class="delivery-form-label" for="delivery-form-data">Дата</label>
             <input class="delivery-form-input" type="text" id="delivery-form-data" name="delivery-data" placeholder="01.04.2020">
           </p>
-          <p>
+          <p class="delivery-form-block">
             <label class="delivery-form-label" for="delivery-form-phone">Телефон</label>
             <input class="delivery-form-input" type="text" id="delivery-form-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
           </p>
-          <p>
+          <p class="delivery-form-block">
             <label class="delivery-form-label" for="delivery-form-addres">Адрес</label>
             <input class="delivery-form-input" type="text" id="delivery-form-addres" name="delivery-addres" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
@@ -213,9 +211,10 @@
       </section>
 
       <section class="feedback">
-        <address class="feedback-addres">
+      <h2 class="visually-hidden">Обратная связь</h2>
+        <address class="feedback-address">
           <p class="feedback-text">Адрес главного офиса и офлайн-магазина:</p>
-          <h4 class="feedback-title">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
+          <p class="feedback-title">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
           <p class="feedback-text">Для заказов по телефону:</p>
           <a class="feedback-title" href="tel:88128121212">+7 (812) 812-12-12</a>
           <p class="feedback-text-small">(с 10 до 20 ежедневно)</p>
@@ -227,6 +226,7 @@
 
     <footer class="page-footer">
       <section class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram Академии</span></a>
@@ -240,6 +240,7 @@
         </ul>
       </section>
       <section class="footer-menu">
+      <h2 class="visually-hidden">Меню</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item"><b>Для поставщиков</b></li>
           <li class="footer-menu-item">О производстве</li>
@@ -248,6 +249,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
+      <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/"><img src="#" alt="htmlacademy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
