@@ -26,4 +26,29 @@
 
 body {
   background-color: #FEAFC3;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.navigation {
+  line-height: 20px;
+}
+
+.navigation-link-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.slider-text-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text-text {
+  font-size: 18px;
+  line-height: 24px;
 }
