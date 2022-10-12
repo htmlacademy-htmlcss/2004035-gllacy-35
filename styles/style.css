@@ -25,12 +25,19 @@
 /*===========================*/
 
 body {
-  background-color: #FEAFC3;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+
+  background-color: #FEAFC3;
+  color: #2D3440
 }
+
+.visually-hidden {
+  display: none;
+}
+
 
 .navigation {
   line-height: 20px;
@@ -51,4 +58,8 @@ body {
 .slider-text-text {
   font-size: 18px;
   line-height: 24px;
+}
+
+.navigation-link {
+  color: #2D3440;
 }
