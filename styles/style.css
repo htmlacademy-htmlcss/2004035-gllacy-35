@@ -24,6 +24,8 @@
 
 /*===========================*/
 
+/* Header */
+
 body {
   font-family: "Inter";
   font-weight: 400;
@@ -34,13 +36,47 @@ body {
   color: #2D3440
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   display: none;
 }
 
-
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 20px;
+  height: 55.72px;
+  margin: 24px 0;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-list-menu {
+  width: 422px;
+}
+
+.navigation-list-button {
+  align-items: center;
+  width: 431px;
+}
+
+.navigation-link-card::after {
+  content: "2 товара";
+}
+
+.navigation-link {
+  color: #2D3440;
+  text-decoration: none;
 }
 
 .navigation-link-phone {
@@ -49,17 +85,89 @@ body {
   line-height: 20px;
 }
 
+/*  */
+
+/* Main-index */
+
+/* Slider */
+
+.slider {
+  margin-top: 21px;
+}
+
 .slider-text-title {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  width: 470px;
 }
 
 .slider-text-text {
   font-size: 18px;
   line-height: 24px;
+  width: 429px;
 }
 
-.navigation-link {
+.slider-text-button {
+  font-weight: 700;
+  font-size: 16px;
   color: #2D3440;
+  text-decoration: none;
+  padding: 12px 32px;
+  background: #FCFCFC;
+  /* border: 4px solid rgba(252, 252, 252, 0.4); */
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
+.slider-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.slider-footer-bullets {
+  display: flex;
+  justify-content: space-between;
+  width: 52px;
+  height: 12px;
+  list-style: none;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.slider-footer-bullet {
+  width: 12px;
+  height: 12px;
+  background: #FCFCFC;
+  border-radius: 50%;
+  opacity: 30%;
+}
+
+.bullet-active {
+  opacity: 100%;
+}
+
+.slider-footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 104px;
+  list-style: none;
+  padding: 0;
+}
+
+.slider-footer-social-list img {
+  width: 24px;
+  height: 24px;
+}
+
+.slider-footer-bullets,
+.slider-footer-social-list {
+  margin: 0;
+}
+
+.slider-footer-social-item,
+.slider-footer-social-link {
+  width: 24px;
+  height: 24px;
 }
