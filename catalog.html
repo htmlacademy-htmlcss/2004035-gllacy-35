@@ -4,43 +4,62 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/catalog.css">
     <link rel="icon" href="images/Favicon/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
-    <header class="page-header">
-      <a href="index.html">
-        <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
-      </a>
+    <header class="page-header container">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <a href="index.html">
+          <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
+        </a>
+        <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item">
-            <a class="navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link-arrow-gown" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" fill="#2D3440"/>
+              </svg>
+              <span class="visually-hidden">Развернуть каталог</span>
+            </a>
           </li>
           <li class="navigation-item">
+            <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О компании</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-list navigation-list-button">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item navigation-item-background search">
             <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/></svg>
               <span class="visually-hidden">Поиск</span>
+              <img src="images/search.svg" alt="Иконка Поиск">
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-background">
             <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/></svg>
-              <span class="visually-hidden">Вход</span>
+              <img src="images/entry.svg" alt="Вход">
+              Вход
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>
+          <li class="navigation-item navigation-item-background">
+            <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
-              2 товара
+              <img src="images/cart.svg" alt="Иконка корзины">
+              <!-- 2 товара -->
             </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog container">
 
       <section class="crumbs">
         <ol class="crumbs-list">
