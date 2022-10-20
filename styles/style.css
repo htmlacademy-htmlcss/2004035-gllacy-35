@@ -662,7 +662,7 @@ body {
   background-size: 100%;
   background-position: 0 -82px;
   border-radius: 16px;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 
 .feedback-address {
@@ -710,7 +710,9 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  padding: 48px 0;
+
 }
 
 .footer-social {
