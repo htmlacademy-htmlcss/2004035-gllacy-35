@@ -80,11 +80,17 @@ body {
 
 .navigation-list-menu {
   width: 422px;
+  justify-content: center;
+}
+
+.navigation-list-menu > .navigation-item {
+  margin: 0 16px;
 }
 
 .navigation-list-button {
   align-items: center;
   width: 431px;
+  margin-left: 180px;
 }
 
 .navigation-link-card::after {
@@ -759,6 +765,10 @@ body {
 .footer-menu-item-text {
   margin: 0;
   display: inline;
+}
+
+.footer-menu-item-text b {
+  font-weight: 700;
 }
 
 .footer-copyright {
