@@ -3,42 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="icon" href="images/Favicon/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
-    <header class="page-header">
-      <a href="index.html">
-        <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
-      </a>
+    <header class="page-header container">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <a href="index.html">
+          <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
+        </a>
+        <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item">
-            <a class="navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link-arrow-gown" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" fill="#2D3440"/>
+              </svg>
+              <span class="visually-hidden">Развернуть каталог</span>
+            </a>
           </li>
           <li class="navigation-item">
+            <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О компании</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-list navigation-list-button">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-phone" href="tel:88005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item navigation-item-background search">
             <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/></svg>
               <span class="visually-hidden">Поиск</span>
+              <img src="images/search.svg" alt="Иконка Поиск">
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-background">
             <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/></svg>
-              <span class="visually-hidden">Вход</span>
+              <img src="images/entry.svg" alt="Вход">
+              Вход
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>
+          <li class="navigation-item navigation-item-background">
+            <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
-              2 товара
+              <img src="images/cart.svg" alt="Иконка корзины">
+              <!-- 2 товара -->
             </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog container">
 
       <section class="crumbs">
         <ol class="crumbs-list">
@@ -58,7 +79,7 @@
       <section class="filter">
       <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div>
+          <div class="filter-block">
             <label class="filter-form-label" for="filter-sorting">Сортировка:</label>
             <select class="filter-form-select" name="filter-sorting" id="filter-sorting">
               <option value="good">по популярности</option>
@@ -66,11 +87,11 @@
               <option value="max">сначала дороже</option>
             </select>
           </div>
-          <div>
+          <div class="filter-block">
             <label class="filter-form-label" for="filter-price">Цена: 100 ₽ – 500 ₽</label>
             <input class="filter-form-select" type="range" name="filter-price" id="filter-price" min="10" max="1500" step="50" value="100">
           </div>
-          <div>
+          <div class="filter-block">
             <label class="filter-form-label">Жирность:</label>
               <label class="filter-form-group">
                 <input class="filter-form-radio" type="radio" name="filter-fat" value="0">0%
@@ -85,7 +106,7 @@
                 <input class="filter-form-radio" type="radio" name="filter-fat" value="30+">выше 30%
               </label>
           </div>
-          <div>
+          <div class="filter-block">
             <label class="filter-form-label">Наполнители:</label>
               <label class="filter-form-group">
                 <input class="filter-form-check" type="checkbox" name="filter-filler" value="chocolate" checked>шоколадные
@@ -221,61 +242,59 @@
             </footer>
           </li>
         </ol>
-        <button class="cards-button button">Показать еще</button>
-        <div>
-          <button>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="#2D3440"/>
-            </svg>
-            <span class="visually-hidden">Предыдущая страница</span>
-          </button>
-          <ol class="pagination-list">
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-link">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-link">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-link">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-link">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-link">5</a>
-            </li>
-          </ol>
-          <button>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="#2D3440"/>
-            </svg>
-            <span class="visually-hidden">Следующая страница</span>
-          </button>
-        </div>
+        <footer class="card-footer">
+          <button class="cards-button button">Показать еще</button>
+          <div class="pagination">
+            <a class="pagination-btn">
+              <img src="images/arrow-left.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка влево">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+            <ol class="pagination-list">
+              <li class="pagination-item pagination-active">
+                <a href="#" class="pagination-item-link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-link">5</a>
+              </li>
+            </ol>
+            <a class="pagination-btn">
+              <img src="images/arrow-right.svg" class="pagination-btn-img width="16" height="16" alt="Стрелка вправо">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </div>
+        </footer>
       </section>
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://t.me/htmlacademy">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.57-3.14c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.66-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg>
+              <img src="images/logo-telegram.svg" class="footer-social-logo" alt="Telegram Академии">
               <span class="visually-hidden">Telegram Академии</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18c-1.52-1.39-2.86-4.14-2.86-4.14s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg>
+              <img src="images/logo-vk.svg" class="footer-social-logo" alt="VKontakte Академии">
               <span class="visually-hidden">VKontakte Академии</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16 13.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L16 14.2c.25-.12.25-.3 0-.42ZM14 2a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg>
+              <img src="images/logo-youtube.svg" class="footer-social-logo" alt="YouTube Академии">
             <span class="visually-hidden">YouTube Академии</span>
           </a>
           </li>
@@ -284,18 +303,26 @@
       <section class="footer-menu">
       <h2 class="visually-hidden">Меню</h2>
         <ul class="footer-menu-list">
-          <li class="footer-menu-item"><b>Для поставщиков</b></li>
-          <li class="footer-menu-item">О производстве</li>
-          <li class="footer-menu-item">Наши документы</li>
-          <li class="footer-menu-item">Экологические стандарты</li>
+          <li class="footer-menu-item">
+            <p class="footer-menu-item-text"><b>Для поставщиков</b></p>
+          </li>
+          <li class="footer-menu-item">
+            <p class="footer-menu-item-text">О производстве</p>
+          </li>
+          <li class="footer-menu-item">
+            <p class="footer-menu-item-text">Наши документы</p>
+          </li>
+          <li class="footer-menu-item">
+            <p class="footer-menu-item-text">Экологические стандарты</p>
+          </li>
         </ul>
       </section>
       <section class="footer-copyright">
       <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/">
-          <img src="images/logo-htmlacademy.svg" width="93" height="26.71" alt="htmlacademy">
+          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="26.71" alt="htmlacademy">
         </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-copyright-link">.html academy</a> © 2021</p>
       </section>
     </footer>
 
