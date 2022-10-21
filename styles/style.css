@@ -24,6 +24,25 @@
 
 /*===========================*/
 
+/* Sticky footer */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+/* Finish sticky footer */
+
 /* Header */
 
 body {
@@ -31,6 +50,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
 
   background-color: #FEAFC3;
   color: #2D3440
