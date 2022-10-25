@@ -48,59 +48,80 @@
 }
 
 .filter-form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 823px;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
+  row-gap: 16px;
 }
 
-.filter-group {
-  margin: 0;
-  padding: 8px 24px;
-  background: rgba(252, 252, 252, 0.3);
-  border-radius: 18px;
-  box-sizing: border-box;
-  font-size: 14px;
-  line-height: 20px;
+.filter-form-label {
+  margin-left: 16px;
 }
 
-.filter-group-check .filter-form-group:not(:last-child),
-.filter-group-fat .filter-form-group:not(:last-child) {
-  margin-right: 16px;
+.filter-block-sorting {
+  grid-column: 1/2;
 }
 
-.filter-form-radio {
-  margin: 0;
-}
-
-.filter-block-sorting,
 .filter-block-price {
-  width: 196px;
-  margin-right: 24px;
+  grid-column: 3/4;
 }
 
 .filter-block-fat {
-  width: 383px;
+  grid-column: 5/-1;
 }
 
 .filter-block-check {
-  width: 604px;
-  margin-right: 16px;
+  grid-column: 1/6;
 }
 
 .filter-button {
+  grid-column: 7/8;
+}
+
+.filter-form-label {
+  margin-bottom: 8px;
+}
+
+.filter-group {
+  margin: 8px 0 0;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.filter-group label:not(:last-child) {
+  margin-right: 16px;
+}
+
+.filter-group-fat {
+  padding: 8px 24px;
+}
+
+.filter-group-check {
+  padding: 10px 24px;
+}
+
+.filter-form-select {
+  border: none;
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  color: #2D3440;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 13px 8px 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.filter-button {
+  align-self: end;
+  padding: 8px 52.5px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 14px;
-  height: 36px;
   line-height: 20px;
-  padding: 8px 52.5px;
   background: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 20px;
-}
-
-.filter-button-text {
-  margin: 0;
 }
 
 /* Cards */
