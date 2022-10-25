@@ -136,9 +136,9 @@
 .card-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 91px 30px;
   margin-bottom: 57px;
 }
 
@@ -151,10 +151,6 @@
   padding: 0 40px 24px;
   display: flex;
   flex-direction: column;
-}
-
-.card-item:nth-child(4n):not(:last-child) {
-  margin-bottom: 91px;
 }
 
 .card-item-title {
