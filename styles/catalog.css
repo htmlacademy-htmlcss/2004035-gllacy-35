@@ -51,6 +51,9 @@
   display: grid;
   grid-template-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
   row-gap: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .filter-form-label {
