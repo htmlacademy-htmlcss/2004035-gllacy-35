@@ -115,6 +115,9 @@ body {
 
 .navigation-link-card::after {
   content: "2 товара";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .navigation-link {
