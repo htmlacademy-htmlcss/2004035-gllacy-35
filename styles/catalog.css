@@ -213,7 +213,7 @@
 
 .cards-button.button {
   background: #FCFCFC;
-  /* border: 4px solid rgba(252, 252, 252, 0.4); */
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   color: #2D3440;
 }
 

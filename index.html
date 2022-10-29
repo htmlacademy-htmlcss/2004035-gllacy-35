@@ -63,19 +63,39 @@
       <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider-main">
           <div class="slider-text">
-            <b class="slider-text-title">Нежный пломбир <br>с клубничным джемом</b>
+            <h3 class="slider-text-title">Нежный пломбир <br>с клубничным джемом</h3>
             <p class="slider-text-text">
             Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
             </p>
             <a class="slider-text-button" href="#">Заказать</a>
           </div>
           <div class="slider-block">
-            <img class="slider-block-img slider-img-active" src="images/ice-cream-red.png" width="306" height="507" alt="Мороженое с красным шариком">
-            <div class="slider-under-big"></div>
-            <img class="slider-block-img" src="images/ice-cream-yellow.png" width="306" height="507" alt="Мороженое с жёлтым шариком">
-            <div class="slider-under-small"></div>
-            <img class="slider-block-img" src="images/ice-cream-multy.png" width="306" height="507" alt="Мороженое с разноцветными шариками">
-            <div class="slider-under-small"></div>
+            <div class="slider-block-wrapper slider-block-active">
+              <div class="slider-buttons">
+                <a href="#" class="slider-button slider-button-previous">
+                  <h3 class="visually-hidden">Предыдущие мороженое</h3>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" />
+                  </svg>
+                </a>
+                <a href="#" class="slider-button slider-button-next">
+                  <h3 class="visually-hidden">Следующее мороженое</h3>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" />
+                  </svg>
+                </a>
+              </div>
+              <img class="slider-block-img slider-img-active" src="images/ice-cream-red.png" width="306" height="507" alt="Мороженое с красным шариком">
+              <!-- <div class="slider-under-big"></div> -->
+            </div>
+            <div class="slider-block-wrapper">
+              <img class="slider-block-img" src="images/ice-cream-yellow.png" width="306" height="507" alt="Мороженое с жёлтым шариком">
+              <div class="slider-under-small"></div>
+            </div>
+            <div class="slider-block-wrapper">
+              <img class="slider-block-img" src="images/ice-cream-multy.png" width="306" height="507" alt="Мороженое с разноцветными шариками">
+              <div class="slider-under-small"></div>
+            </div>
           </div>
         </div>
         <footer class="slider-footer">
@@ -88,19 +108,31 @@
             <ul class="slider-footer-social-list">
               <li class="slider-footer-social-item">
                 <a class="slider-footer-social-link" href="https://t.me/htmlacademy">
-                  <img src="images/logo-telegram.svg" alt="Telegram Академии">
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                    <circle cx="14" cy="14" r="12" fill="currentColor" />
+                    <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.57-3.14c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.66-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z" clip-rule="evenodd"/>
+                    <rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".5" stroke-width="2" rx="13"/>
+                  </svg>
                   <span class="visually-hidden">Telegram Академии</span>
                 </a>
               </li>
               <li class="slider-footer-social-item">
                 <a class="slider-footer-social-link" href="https://vk.com/htmlacademy">
-                  <img src="images/logo-vk.svg" alt="VKontakte Академии">
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                    <circle cx="14" cy="14" r="12" fill="currentColor"/>
+                    <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18c-1.52-1.39-2.86-4.14-2.86-4.14s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" clip-rule="evenodd"/>
+                    <rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".5" stroke-width="2" rx="13"/>
+                  </svg>
                   <span class="visually-hidden">VKontakte Академии</span>
                 </a>
               </li>
               <li class="slider-footer-social-item">
                 <a class="slider-footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <img src="images/logo-youtube.svg" alt="YouTube Академии">
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                    <circle cx="14" cy="14" r="12" fill="currentColor"/>
+                    <path fill="#FCFCFC" d="m16 13.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L16 14.2c.25-.12.25-.3 0-.42ZM14 2a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z"/>
+                    <rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".5" stroke-width="2" rx="13"/>
+                  </svg>
                   <span class="visually-hidden">YouTube Академии</span>
                 </a>
               </li>
@@ -115,12 +147,12 @@
           <li class="banner-item">
             <h3 class="banner-item-title">Малинка даром!</h3>
             <p class="banner-item-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="banner-item-btn" href="#">Хочу подарок</a>
+            <a class="banner-item-button" href="#">Хочу подарок</a>
           </li>
           <li class="banner-item">
             <h3 class="banner-item-title">Маршмеллоу даром!</h3>
             <p class="banner-item-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a class="banner-item-btn" href="#">Хочу подарок</a>
+            <a class="banner-item-button" href="#">Хочу подарок</a>
           </li>
         </ul>
       </section>
@@ -134,7 +166,7 @@
             <img class="product-item-img" width="168" height="168" src="images/balloons/raspberry.png" alt="Малиновый шарик">
             <footer class="product-item-footer">
               <p class="product-item-footer-text">310 ₽/<span class="product-item-footer-small">кг</span></p>
-              <button class="product-item-footer-btn"><span class="visually-hidden">В корзину</span></button>
+              <button class="product-item-footer-button"><span class="visually-hidden">В корзину</span></button>
             </footer>
           </li>
           <li class="product-item">
@@ -143,7 +175,7 @@
             <img class="product-item-img" width="168" height="168" src="images/balloons/pistachio.png" alt="Фисташковый шарик">
             <footer class="product-item-footer">
               <p class="product-item-footer-text">340 ₽/<span class="product-item-footer-small">кг</span></p>
-              <button class="product-item-footer-btn"><span class="visually-hidden">В корзину</span></button>
+              <button class="product-item-footer-button"><span class="visually-hidden">В корзину</span></button>
             </footer>
           </li>
           <li class="product-item">
@@ -152,7 +184,7 @@
             <img class="product-item-img" width="168" height="168" src="images/balloons/blueberries.png" alt="Черничный шарик">
             <footer class="product-item-footer">
               <p class="product-item-footer-text">330 ₽/<span class="product-item-footer-small">кг</span></p>
-              <button class="product-item-footer-btn"><span class="visually-hidden">В корзину</span></button>
+              <button class="product-item-footer-button"><span class="visually-hidden">В корзину</span></button>
             </footer>
           </li>
           <li class="product-item">
@@ -161,7 +193,7 @@
             <img class="product-item-img" width="168" height="168" src="images/balloons/bubble-gum.png" alt="Бабл-гам шарик">
             <footer class="product-item-footer">
               <p class="product-item-footer-text">320 ₽/<span class="product-item-footer-small">кг</span></p>
-              <button class="product-item-footer-btn"><span class="visually-hidden">В корзину</span></button>
+              <button class="product-item-footer-button"><span class="visually-hidden">В корзину</span></button>
             </footer>
           </li>
         </ul>
