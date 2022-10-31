@@ -22,10 +22,10 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О компании</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
 
@@ -100,9 +100,12 @@
         </div>
         <footer class="slider-footer">
           <ul class="slider-footer-bullets">
-            <li class="slider-footer-bullet bullet-active"></li>
-            <li class="slider-footer-bullet"></li>
-            <li class="slider-footer-bullet"></li>
+            <!-- <li class="slider-footer-bullet"><a class="slider-footer-bullet-link bullet-link-active" href="#"></a></li>
+            <li class="slider-footer-bullet"><a class="slider-footer-bullet-link" href="#"></a></li>
+            <li class="slider-footer-bullet"><a class="slider-footer-bullet-link" href="#"></a></li> -->
+            <li class="slider-footer-bullet bullet-active" tabindex="0"></li>
+            <li class="slider-footer-bullet" tabindex="0"></li>
+            <li class="slider-footer-bullet" tabindex="0"></li>
           </ul>
           <div class="slider-footer-social">
             <ul class="slider-footer-social-list">
@@ -264,7 +267,7 @@
               <label class="subscription-text" for="subscription-emain">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </label>
               <div class="subscription-form-footer">
-                <input class="subscription-input" type="email" name="email" id="subscription-emain" placeholder="email@example.com">
+                <input class="subscription-input" type="email" name="email" id="subscription-emain" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@example.com">
                 <button class="button" type="submit">Отправить</button>
               </div>
             </form>
@@ -337,7 +340,11 @@
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/logo-youtube.svg" class="footer-social-logo" alt="YouTube Академии">
+              <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                <circle cx="14" cy="14" r="12" fill="currentColor"/>
+                <path fill="#FCFCFC" d="m16 13.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L16 14.2c.25-.12.25-.3 0-.42ZM14 2a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z"/>
+                <rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".5" stroke-width="2" rx="13"/>
+              </svg>
             <span class="visually-hidden">YouTube Академии</span>
           </a>
           </li>
