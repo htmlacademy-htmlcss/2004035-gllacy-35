@@ -127,6 +127,20 @@ body {
   text-decoration: none;
 }
 
+.navigation-item-catalog {
+  position: relative;
+}
+
+.navigation-link-catalog::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/arrow-down.svg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+}
+
 .navigation-link-card::after {
   content: "2 товара";
   font-weight: 400;
@@ -137,6 +151,10 @@ body {
 .navigation-list-menu .navigation-link {
   padding: 8px 16px;
   box-sizing: border-box;
+}
+
+.navigation-link.navigation-link-catalog {
+  padding: 8px 38px 8px 16px;
 }
 
 .navigation-list-menu .navigation-link:hover {
@@ -155,6 +173,14 @@ body {
   border-radius: 30px;
   outline: none;
   padding: 6px 14px;
+}
+
+.navigation-list-menu .navigation-link-catalog:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+  outline: none;
+  padding: 6px 36px 6px 14px;
 }
 
 /* .navigation-list-menu .navigation-link:focus .navigation-item {
