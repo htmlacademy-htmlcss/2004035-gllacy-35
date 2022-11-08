@@ -170,6 +170,29 @@
   border-radius: 20px;
 }
 
+.filter-button:hover {
+  background: #FCFCFC;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.filter-button:active {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid rgba(252, 252, 252, 0);
+  /* outline: none; */
+}
+
+.filter-button:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.filter-button:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  border: 2px solid #FCFCFC;
+}
+
 .filter-block-price {
   margin: 0;
   padding: 0;
