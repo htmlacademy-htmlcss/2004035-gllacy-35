@@ -257,7 +257,7 @@ body {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
   box-sizing: border-box;
-  transform: translateY(16px);
+  transform: translateY(14px);
   display: none;
 }
 
@@ -265,7 +265,7 @@ body {
   position: relative;
 }
 
-.popup-catalog-open {
+.popup-open {
   display: block;
 }
 
@@ -330,10 +330,6 @@ body {
   outline: none;
 }
 
-.popup-search-open {
-  display: block;
-}
-
 .popup-search {
   z-index: 1;
   right: 0;
@@ -381,10 +377,6 @@ body {
 
 .navigation-list-button .navigation-item:nth-child(3) {
   position: relative;
-}
-
-.popup-enter-open {
-  display: block;
 }
 
 .popup-enter {
@@ -438,6 +430,147 @@ body {
 .popup-enter-link:not(:last-child) {
   margin-bottom: 4px;
 }
+
+.navigation-item:last-child {
+  position: relative;
+}
+
+.popup-card {
+  padding: 48px;
+  right: 0;
+  z-index: 3;
+}
+
+.popup-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popup-card-list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 32px;
+}
+
+.popup-card-item {
+  display: flex;
+  min-width: 345px;
+  align-items: center;
+}
+
+.popup-card-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.popup-card-item-img {
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+}
+
+.popup-card-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.popup-card-name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.popup-card-info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+
+}
+
+.popup-card-price {
+  margin: 0;
+  margin-right: 52px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.popup-card-item-delete {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.popup-card-item-delete::before, .popup-card-item-delete::after {
+  content: "";
+  width: 13.5px;
+  height: 1.33px;
+  background-color: #2D3440;
+  position: absolute;
+  border-radius: 1px;
+}
+
+.popup-card-item-delete::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup-card-item-delete::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup-card-button {
+  text-decoration: none;
+}
+
+.popup-card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.popup-card-button {
+  margin-right: auto;
+}
+
+.popup-card-total-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.popup-card-total-number {
+  margin-right: 2px;
+}
+
+.popup-card-empty {
+  min-width: 288px;
+  padding: 48px 0;
+  right: 0;
+}
+
+.popup-card-empty-text {
+  margin: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #2D3440;
+}
+
+
 
 
 
