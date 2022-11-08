@@ -1356,6 +1356,7 @@ body {
   border-radius: 8px;
   padding: 24px 40px 42px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .delivery-form-text {
@@ -1369,14 +1370,65 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  /* position: relative; */
 }
 
 .delivery-form-label {
+  display: block;
+  width: fit-content;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
   margin-bottom: 8px;
+  position: relative;
+}
+
+.tooltip::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/tultip.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(4px, -50%);
+}
+
+.tooltip-data {
+  position: absolute;
+  display: none;
+  top: 103px;
+  left: 91px;
+}
+
+.tooltip-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #565C66;
+  margin: 0;
+  width: fit-content;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.tooltip-addres {
+  position: absolute;
+  display: none;
+  top: 199px;
+  left: 103px;
+}
+
+.tooltip-text-addres {
+  top: 14px;
+  right: 11px;
+}
+
+.tooltip-open {
+  display: block;
 }
 
 .delivery-form-input {
@@ -1391,6 +1443,36 @@ body {
 
 .delivery-form-input::placeholder {
   color: #B9B9B9;
+}
+
+.delivery-form-input:hover {
+  border: 1px solid #2D3440;
+  outline: none;
+}
+
+.delivery-form-input:focus {
+  outline: 2px solid #2D3440;
+}
+
+.delivery-form-input:invalid {
+  border: 1px solid #EA5454;
+  outline: none;
+}
+
+.delivery-form-input:invalid:hover {
+  outline: 2px solid #EA5454;
+  /* border: none; */
+}
+
+.delivery-form-input:disabled {
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+  color: #2D3440;
+  opacity: 0.65;
+}
+
+.delivery-form-input:disabled:hover {
+  opacity: 1;
 }
 
 .delivery-form-block-up {
