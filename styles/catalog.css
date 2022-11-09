@@ -297,7 +297,7 @@
   left: 0;
   width: 16px;
   height: 16px;
-  outline: 1.33333px solid #000000;
+  outline: 1.33333px solid #2D3440;
   outline-offset: 0;
   border-radius: 50%;
 }
@@ -319,6 +319,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.control-mark:hover {
+  outline-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:checked + .control-mark:hover:before {
+  background-color: #FCFCFC;
+}
+
+.control-mark:disabled {
+  outline-color: red;
+}
+
+.control-input[type="radio"]:checked + .control-mark:disabled:before {
+  opacity: .5;
 }
 
 /* .control-mark-check{
@@ -352,6 +368,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(../images/checkboc-check.svg);
+}
+
+.control-mark-check:hover {
+  background-image: url(../images/checkbox-hover.svg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark:hover::before {
+  background-image: url(../images/checkbox-check-hover.svg);
+}
+
+.control-mark-check:disabled {
+  background-image: url(../images/checkbox-disable.svg);
+}
+
+.control-input[type="checkbox"]:disabled:checked + .control-mark::before {
+  background-image: url(../images/checkbox-check-disable.svg);
 }
 
 /* Cards */
