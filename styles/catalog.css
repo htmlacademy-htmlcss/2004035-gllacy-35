@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 3 version
+*/
+
 .navigation > a {
   height: 55.72px;
 }
@@ -13,6 +20,8 @@
   list-style: none;
   padding: 0;
   margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -31,7 +40,9 @@
   background-position: center;
   position: absolute;
   top:50%;
-  transform: translate(-20px, -50%);
+  -webkit-transform: translate(-20px, -50%);
+      -ms-transform: translate(-20px, -50%);
+          transform: translate(-20px, -50%);
 }
 
 /* .crumbs-item:not(:first-child) {
@@ -68,7 +79,9 @@
 }
 
 .filter-form {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
   grid-template-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
   row-gap: 16px;
   font-weight: 400;
@@ -81,10 +94,14 @@
 }
 
 .filter-block-sorting {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
 
 .filter-block-price {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
@@ -93,10 +110,14 @@
 }
 
 .filter-block-check {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-column: 1/6;
 }
 
 .filter-button {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
   grid-column: 7/8;
 }
 
@@ -112,7 +133,8 @@
   margin: 8px 0 0;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter-group label:not(:last-child) {
@@ -131,8 +153,12 @@
 .select {
   position: relative;
   width: 196px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* .filter-form-select {
@@ -165,7 +191,9 @@
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: right 13px center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .filter-form-select:hover {
@@ -179,9 +207,12 @@
 }
 
 .filter-button {
-  align-self: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   padding: 8px 52.5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -220,15 +251,21 @@
 }
 
 .filter-range-wrapper-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 16px;
   margin-bottom: 8px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* transform: translateY(-2px); */
 }
 
 .range-label {
-  transform: translate(4px, 0);
+  -webkit-transform: translate(4px, 0);
+      -ms-transform: translate(4px, 0);
+          transform: translate(4px, 0);
 }
 
 .filter-range {
@@ -237,12 +274,15 @@
   font: inherit;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 .filter-range::-webkit-outer-spin-button,
 .filter-range::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -321,7 +361,9 @@
 .control-mark{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
   width: 16px;
   height: 16px;
@@ -346,7 +388,9 @@
   background-color: #2D3440;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .control-mark:hover {
@@ -394,7 +438,9 @@
   /* background-color: #2D3440; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-image: url(../images/checkboc-check.svg);
 }
 
@@ -423,7 +469,9 @@
 .card-list {
   list-style: none;
   padding: 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 270px 30px 270px 30px 270px 30px 270px;
   grid-template-columns: repeat(4, 270px);
   gap: 91px 30px;
   margin-bottom: 57px;
@@ -434,10 +482,16 @@
   height: 281px;
   background: #FCFCFC;
   border-radius: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 40px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-item-title {
@@ -459,7 +513,9 @@
 }
 
 .card-item-img {
-  order: -11;
+  -webkit-box-ordinal-group: -10;
+      -ms-flex-order: -11;
+          order: -11;
   position: relative;
   left: 11px;
   top: -51px;
@@ -467,10 +523,19 @@
 }
 
 .card-item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-item-footer-text {
@@ -504,9 +569,15 @@
 /* Pagination */
 
 .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cards-button.button {
@@ -532,9 +603,15 @@
 }
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 168px;
   height: 24px;
   margin-left: 335px;
@@ -550,12 +627,16 @@
 }
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
 }
 
 .pagination-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 24px;
   height: 24px;
@@ -573,7 +654,8 @@
   color: #2D3440;
   text-decoration: none;
   margin: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 50%;
 }
 
