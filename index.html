@@ -10,7 +10,7 @@
 
     <header class="page-header container">
       <nav class="navigation">
-        <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
+        <img class="navigation-logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси Shop">
         <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item navigation-item-catalog">
             <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог</a>
@@ -51,13 +51,13 @@
               <svg class="navigation-link-search-img" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/>
               </svg>
-              <div class="popup popup-search">
-                <form action="post">
-                  <label class="visually-hidden" for="search"></label>
-                  <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                </form>
-              </div>
             </a>
+            <div class="popup popup-search">
+              <form action="post">
+                <label class="visually-hidden" for="search"></label>
+                <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+              </form>
+            </div>
             </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-enter" href="#">
@@ -66,10 +66,12 @@
             <div class="popup popup-enter">
               <p class="popup-enter-title">Личный кабинет</p>
               <form class="popup-enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden" for="user-name"></label>
-                <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                <label class="visually-hidden" for="user-passoword"></label>
-                <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                <label class="visually-hidden">
+                  <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </label>
+                <label class="visually-hidden">
+                  <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                </label>
                 <button class="popup-enter-button button" type="submit">Войти</button>
                 <div class="popup-enter-link-wrapper">
                   <a class="popup-enter-link" href="#">Забыли пароль?</a>
@@ -82,40 +84,40 @@
             <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
               <span class="navigation-link-card-adget">2</span> товара
-
-              <div class="popup popup-card">
-                <p class="popup-card-title">Корзина</p>
-                <ul class="popup-card-list">
-                  <li class="popup-card-item">
-                    <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик">
-                    <div class="popup-card-item-wrapper">
-                      <p class="popup-card-name">Малинка</p>
-                      <p class="popup-card-info"><span>1</span>кг &#215; <span>310</span>&#8381;</p>
-                    </div>
-                    <p class="popup-card-price"><span>310</span>&#8381;</p>
-                    <button class="popup-card-item-delete" type="submit"></button>
-                  </li>
-                  <li class="popup-card-item">
-                    <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Малиновый шарик">
-                    <div class="popup-card-item-wrapper">
-                      <p class="popup-card-name">Бабл-гам</p>
-                      <p class="popup-card-info"><span>1,5</span>кг &#215; <span>320</span>&#8381;</p>
-                    </div>
-                    <p class="popup-card-price"><span>480</span>&#8381;</p>
-                    <button class="popup-card-item-delete" type="submit"></button>
-                  </li>
-                </ul>
-                <footer class="popup-card-footer">
-                  <button class="button popup-card-button">Оформить заказ</button>
-                  <p class="popup-card-total-price">Итого: <span class="popup-card-total-number">790</span>&#8381;</p>
-                </footer>
-              </div>
-
-              <div class="popup popup-card-empty">
-                <p class="popup-card-empty-text">Ваша корзина пока пуста</p>
-              </div>
-
             </a>
+
+            <div class="popup popup-card">
+              <p class="popup-card-title">Корзина</p>
+              <ul class="popup-card-list">
+                <li class="popup-card-item">
+                  <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик">
+                  <div class="popup-card-item-wrapper">
+                    <p class="popup-card-name">Малинка</p>
+                    <p class="popup-card-info"><span>1</span>кг &#215; <span>310</span>&#8381;</p>
+                  </div>
+                  <p class="popup-card-price"><span>310</span>&#8381;</p>
+                  <button class="popup-card-item-delete" type="submit"></button>
+                </li>
+                <li class="popup-card-item">
+                  <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Малиновый шарик">
+                  <div class="popup-card-item-wrapper">
+                    <p class="popup-card-name">Бабл-гам</p>
+                    <p class="popup-card-info"><span>1,5</span>кг &#215; <span>320</span>&#8381;</p>
+                  </div>
+                  <p class="popup-card-price"><span>480</span>&#8381;</p>
+                  <button class="popup-card-item-delete" type="submit"></button>
+                </li>
+              </ul>
+              <div class="popup-card-footer">
+                <button class="button popup-card-button">Оформить заказ</button>
+                <p class="popup-card-total-price">Итого: <span class="popup-card-total-number">790</span>&#8381;</p>
+              </div>
+            </div>
+
+            <div class="popup popup-card-empty">
+              <p class="popup-card-empty-text">Ваша корзина пока пуста</p>
+            </div>
+
           </li>
         </ul>
       </nav>
@@ -310,7 +312,7 @@
             </li>
             <li class="advantages-item">
               <img src="images/logo-cow.svg" class="advantages-item-img" width="48" height="48" alt="">
-              <p class="advantages-item-text">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="advantages-item-text">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="advantages-item">
               <img src="images/logo-thermometer.svg" class="advantages-item-img" width="48" height="48" alt="">
@@ -346,7 +348,7 @@
           <p class="delivery-block-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
           <div class="delivery-form-block-up">
             <p class="delivery-form-block">
               <label class="delivery-form-label tooltip" for="delivery-form-data">Дата</label>
@@ -364,12 +366,12 @@
           <button class="button delivery-button" type="submit">Отправить</button>
 
           <div class="tooltip-data">
-            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="54" fill="none"><g filter="url(#a)"><path fill="#fff" fill-rule="evenodd" d="M17 5a1 1 0 0 0-1 1v10l-7 7 7 7v10a1 1 0 0 0 1 1h160a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H17Z" clip-rule="evenodd"/><path fill="#B9B9B9" d="m16 16 .35.35.15-.14V16H16Zm-7 7-.35-.35-.36.35.36.35L9 23Zm7 7h.5v-.2l-.15-.15L16 30Zm.5-24c0-.28.22-.5.5-.5v-1c-.83 0-1.5.67-1.5 1.5h1Zm0 10V6h-1v10h1Zm-7.15 7.35 7-7-.7-.7-7 7 .7.7Zm7 6.3-7-7-.7.7 7 7 .7-.7ZM16.5 40V30h-1v10h1Zm.5.5a.5.5 0 0 1-.5-.5h-1c0 .83.67 1.5 1.5 1.5v-1Zm160 0H17v1h160v-1Zm.5-.5a.5.5 0 0 1-.5.5v1c.83 0 1.5-.67 1.5-1.5h-1Zm0-34v34h1V6h-1Zm-.5-.5c.28 0 .5.22.5.5h1c0-.83-.67-1.5-1.5-1.5v1Zm-160 0h160v-1H17v1Z"/></g><defs><filter id="a" width="186.21" height="53" x=".29" y=".5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="4"/><feColorMatrix values="0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_13581_2525"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_13581_2525" result="shape"/></filter></defs></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="54" fill="none"><g filter="url(#a)"><path fill="#fff" fill-rule="evenodd" d="M17 5a1 1 0 0 0-1 1v10l-7 7 7 7v10a1 1 0 0 0 1 1h160a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H17Z" clip-rule="evenodd"/><path fill="#B9B9B9" d="m16 16 .35.35.15-.14V16H16Zm-7 7-.35-.35-.36.35.36.35L9 23Zm7 7h.5v-.2l-.15-.15L16 30Zm.5-24c0-.28.22-.5.5-.5v-1c-.83 0-1.5.67-1.5 1.5h1Zm0 10V6h-1v10h1Zm-7.15 7.35 7-7-.7-.7-7 7 .7.7Zm7 6.3-7-7-.7.7 7 7 .7-.7ZM16.5 40V30h-1v10h1Zm.5.5a.5.5 0 0 1-.5-.5h-1c0 .83.67 1.5 1.5 1.5v-1Zm160 0H17v1h160v-1Zm.5-.5a.5.5 0 0 1-.5.5v1c.83 0 1.5-.67 1.5-1.5h-1Zm0-34v34h1V6h-1Zm-.5-.5c.28 0 .5.22.5.5h1c0-.83-.67-1.5-1.5-1.5v1Zm-160 0h160v-1H17v1Z"/></g><defs><filter width="186.21" height="53" x=".29" y=".5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="4"/><feColorMatrix values="0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_13581_2525"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_13581_2525" result="shape"/></filter></defs></svg>
             <p class="tooltip-text">Введите дату</p>
           </div>
 
           <div class="tooltip-addres">
-            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="70" fill="none"><g filter="url(#a)"><path fill="#fff" fill-rule="evenodd" d="M17 5a1 1 0 0 0-1 1v10l-7 7 7 7v26a1 1 0 0 0 1 1h160a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H17Z" clip-rule="evenodd"/><path fill="#B9B9B9" d="m16 16 .35.35.15-.14V16H16Zm-7 7-.35-.35-.36.35.36.35L9 23Zm7 7h.5v-.2l-.15-.15L16 30Zm.5-24c0-.28.22-.5.5-.5v-1c-.83 0-1.5.67-1.5 1.5h1Zm0 10V6h-1v10h1Zm-7.15 7.35 7-7-.7-.7-7 7 .7.7Zm7 6.3-7-7-.7.7 7 7 .7-.7ZM16.5 56V30h-1v26h1Zm.5.5a.5.5 0 0 1-.5-.5h-1c0 .83.67 1.5 1.5 1.5v-1Zm160 0H17v1h160v-1Zm.5-.5a.5.5 0 0 1-.5.5v1c.83 0 1.5-.67 1.5-1.5h-1Zm0-50v50h1V6h-1Zm-.5-.5c.28 0 .5.22.5.5h1c0-.83-.67-1.5-1.5-1.5v1Zm-160 0h160v-1H17v1Z"/></g><defs><filter id="a" width="186.21" height="69" x=".29" y=".5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="4"/><feColorMatrix values="0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_884_2844"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_884_2844" result="shape"/></filter></defs></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="187" height="70" fill="none"><g filter="url(#a)"><path fill="#fff" fill-rule="evenodd" d="M17 5a1 1 0 0 0-1 1v10l-7 7 7 7v26a1 1 0 0 0 1 1h160a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H17Z" clip-rule="evenodd"/><path fill="#B9B9B9" d="m16 16 .35.35.15-.14V16H16Zm-7 7-.35-.35-.36.35.36.35L9 23Zm7 7h.5v-.2l-.15-.15L16 30Zm.5-24c0-.28.22-.5.5-.5v-1c-.83 0-1.5.67-1.5 1.5h1Zm0 10V6h-1v10h1Zm-7.15 7.35 7-7-.7-.7-7 7 .7.7Zm7 6.3-7-7-.7.7 7 7 .7-.7ZM16.5 56V30h-1v26h1Zm.5.5a.5.5 0 0 1-.5-.5h-1c0 .83.67 1.5 1.5 1.5v-1Zm160 0H17v1h160v-1Zm.5-.5a.5.5 0 0 1-.5.5v1c.83 0 1.5-.67 1.5-1.5h-1Zm0-50v50h1V6h-1Zm-.5-.5c.28 0 .5.22.5.5h1c0-.83-.67-1.5-1.5-1.5v1Zm-160 0h160v-1H17v1Z"/></g><defs><filter width="186.21" height="69" x=".29" y=".5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="4"/><feColorMatrix values="0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0 0.7625 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_884_2844"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_884_2844" result="shape"/></filter></defs></svg>
             <p class="tooltip-text tooltip-text-addres">Введите название<br>улицы, дома и квартиры</p>
           </div>
 
@@ -446,7 +448,7 @@
       <section class="footer-copyright">
       <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/">
-          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="26.71" alt="htmlacademy">
+          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="27" alt="htmlacademy">
         </a>
         <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-copyright-link">.html academy</a> © 2021</p>
       </section>

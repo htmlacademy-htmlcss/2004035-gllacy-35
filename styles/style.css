@@ -96,6 +96,11 @@ body {
   margin: 24px 0;
 }
 
+.navigation-logo-img {
+  width: 137px;
+  height: 55.72px;
+}
+
 .navigation-item-search {
   width: 32px;
   height: 32px;
@@ -1130,7 +1135,7 @@ body {
   width: 506px;
   height: 66px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .advantages-item-img {
@@ -1700,7 +1705,7 @@ body {
 }
 
 .footer-copyright-logo {
-  /* margin-top: 16px; */
+  height: 26.71px;
   margin-bottom: 8.29px;
 }
 
