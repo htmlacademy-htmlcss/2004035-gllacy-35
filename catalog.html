@@ -12,7 +12,7 @@
     <header class="page-header container">
       <nav class="navigation">
         <a href="index.html">
-          <img src="images/logo.svg" width="137" height="55.72" alt="Логотип Глейси Shop">
+          <img class="navigation-logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси Shop">
         </a>
         <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item navigation-item-catalog">
@@ -54,13 +54,13 @@
               <svg class="navigation-link-search-img" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/>
               </svg>
-              <div class="popup popup-search">
-                <form action="post">
-                  <label class="visually-hidden" for="search"></label>
-                  <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                </form>
-              </div>
             </a>
+            <div class="popup popup-search">
+              <form action="post">
+                <label class="visually-hidden" for="search"></label>
+                <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+              </form>
+            </div>
             </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-enter" href="#">
@@ -69,10 +69,12 @@
             <div class="popup popup-enter">
               <p class="popup-enter-title">Личный кабинет</p>
               <form class="popup-enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden" for="user-name"></label>
-                <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                <label class="visually-hidden" for="user-passoword"></label>
-                <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                <label class="visually-hidden">
+                  <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </label>
+                <label class="visually-hidden">
+                  <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                </label>
                 <button class="popup-enter-button button" type="submit">Войти</button>
                 <div class="popup-enter-link-wrapper">
                   <a class="popup-enter-link" href="#">Забыли пароль?</a>
@@ -85,36 +87,40 @@
             <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
               <span class="navigation-link-card-adget">2</span> товара
-
-              <div class="popup popup-card">
-                <p class="popup-card-title">Корзина</p>
-                <ul class="popup-card-list">
-                  <li class="popup-card-item">
-                    <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик">
-                    <div class="popup-card-item-wrapper">
-                      <p class="popup-card-name">Малинка</p>
-                      <p class="popup-card-info"><span>1</span>кг &#215; <span>310</span>&#8381;</p>
-                    </div>
-                    <p class="popup-card-price"><span>310</span>&#8381;</p>
-                    <button class="popup-card-item-delete" type="submit"></button>
-                  </li>
-                  <li class="popup-card-item">
-                    <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Малиновый шарик">
-                    <div class="popup-card-item-wrapper">
-                      <p class="popup-card-name">Бабл-гам</p>
-                      <p class="popup-card-info"><span>1,5</span>кг &#215; <span>320</span>&#8381;</p>
-                    </div>
-                    <p class="popup-card-price"><span>480</span>&#8381;</p>
-                    <button class="popup-card-item-delete" type="submit"></button>
-                  </li>
-                </ul>
-                <footer class="popup-card-footer">
-                  <button class="button popup-card-button" href="#">Оформить заказ</button>
-                  <p class="popup-card-total-price">Итого: <span class="popup-card-total-number">790</span>&#8381;</p>
-                </footer>
-              </div>
-
             </a>
+
+            <div class="popup popup-card">
+              <p class="popup-card-title">Корзина</p>
+              <ul class="popup-card-list">
+                <li class="popup-card-item">
+                  <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик">
+                  <div class="popup-card-item-wrapper">
+                    <p class="popup-card-name">Малинка</p>
+                    <p class="popup-card-info"><span>1</span>кг &#215; <span>310</span>&#8381;</p>
+                  </div>
+                  <p class="popup-card-price"><span>310</span>&#8381;</p>
+                  <button class="popup-card-item-delete" type="submit"></button>
+                </li>
+                <li class="popup-card-item">
+                  <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Малиновый шарик">
+                  <div class="popup-card-item-wrapper">
+                    <p class="popup-card-name">Бабл-гам</p>
+                    <p class="popup-card-info"><span>1,5</span>кг &#215; <span>320</span>&#8381;</p>
+                  </div>
+                  <p class="popup-card-price"><span>480</span>&#8381;</p>
+                  <button class="popup-card-item-delete" type="submit"></button>
+                </li>
+              </ul>
+              <div class="popup-card-footer">
+                <button class="button popup-card-button">Оформить заказ</button>
+                <p class="popup-card-total-price">Итого: <span class="popup-card-total-number">790</span>&#8381;</p>
+              </div>
+            </div>
+
+            <div class="popup popup-card-empty">
+              <p class="popup-card-empty-text">Ваша корзина пока пуста</p>
+            </div>
+
           </li>
         </ul>
       </nav>
@@ -157,10 +163,10 @@
               <div class="bilter-block-range">
                 <div class="filter-range-wrapper-inputs">
                   Цена:
-                  <label class="range-label">
+                  <div class="range-label">
                     <input class="filter-range" type="number" value="100" name="min-price">&#8381;
                     -&nbsp;<input class="filter-range" type="number" value="500" name="max-price">&#8381;
-                  </label>
+                  </div>
                 </div>
 
                 <div class="range-ckale-wrapper">
@@ -244,7 +250,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Малинка</h3>
             <p class="card-item-text">Сливочное мороженое с малиновым джемом</p>
-            <img class="card-item-img" width="168" height="168" width="168" height="168" src="images/balloons/raspberry.png" alt="Малиновый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/raspberry.png" alt="Малиновый шарик">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">310 ₽/<span class="card-item-footer-small">кг</span></p>
               <a class="product-item-footer-button" href="#">
@@ -450,6 +456,7 @@
         <footer class="card-footer">
           <a class="cards-button button button-white" href="#">Показать еще</a>
           <section class="pagination">
+            <h2 class="visually-hidden">Пагинация</h2>
             <a class="pagination-btn">
               <img src="images/arrow-left.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка влево">
               <span class="visually-hidden">Предыдущая страница</span>
@@ -537,7 +544,7 @@
       <section class="footer-copyright">
       <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/">
-          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="26.71" alt="htmlacademy">
+          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="27" alt="htmlacademy">
         </a>
         <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-copyright-link">.html academy</a> © 2021</p>
       </section>
