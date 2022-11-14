@@ -643,8 +643,8 @@ body {
 
 .slider-text {
   margin-left: 70px;
-  margin-right: 21px;
-  /* margin-top: 19px; */
+  /* margin-right: 21px; */
+  margin-top: 6px;
 }
 
 .slider-block {
@@ -655,14 +655,14 @@ body {
 .slider-buttons {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(2px, -42%);
   width: 350px;
   display: flex;
   justify-content: space-between;
 }
 
 .slider-button {
-  padding: 11px;
+  padding: 9px;
   box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
