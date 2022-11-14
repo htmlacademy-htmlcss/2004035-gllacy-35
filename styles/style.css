@@ -1190,6 +1190,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #565C66;
+  margin: 0;
+  margin-bottom: 12.22px;
 }
 
 .news-title {
@@ -1197,6 +1199,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #2D3440;
+  margin: 0;
 }
 
 .subscription {
