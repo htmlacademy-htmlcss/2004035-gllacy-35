@@ -49,9 +49,7 @@ body {
 }
 
 .main-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 
@@ -89,10 +87,8 @@ body {
 .button {
   padding: 12px 32px;
   min-width: 123px;
-  /* min-height: 44px; */
   background: #FF2F64;
-  -webkit-box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-          box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   color: #FCFCFC;
   font-weight: 700;
@@ -100,8 +96,7 @@ body {
   line-height: 20px;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navigation {
@@ -138,9 +133,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .navigation-list {
@@ -185,9 +178,7 @@ body {
   background-image: url(../images/arrow-down.svg);
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(6px);
-      -ms-transform: translateY(-50%) translateX(6px);
-          transform: translateY(-50%) translateX(6px);
+  transform: translateY(-50%) translateX(6px);
 }
 
 .navigation-link-enter, .navigation-link-card {
@@ -203,9 +194,7 @@ body {
   height: 16px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-22px);
-      -ms-transform: translateY(-50%) translateX(-22px);
-          transform: translateY(-50%) translateX(-22px);
+  transform: translateY(-50%) translateX(-22px);
   background-image: url(../images/entry.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -223,9 +212,7 @@ body {
   height: 16px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-22px);
-      -ms-transform: translateY(-50%) translateX(-22px);
-          transform: translateY(-50%) translateX(-22px);
+  transform: translateY(-50%) translateX(-22px);
   background-image: url(../images/cart.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -248,8 +235,7 @@ body {
 
 .navigation-list-menu .navigation-link {
   padding: 8px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navigation-link.navigation-link-catalog {
@@ -302,14 +288,10 @@ body {
 .popup {
   position: absolute;
   background-color: #FCFCFC;
-  -webkit-box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
-          box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: translateY(14px);
-      -ms-transform: translateY(14px);
-          transform: translateY(14px);
+  box-sizing: border-box;
+  transform: translateY(14px);
   display: none;
 }
 
@@ -388,9 +370,7 @@ body {
   z-index: 1;
   right: 0;
   top: 16px;
-  -webkit-transform: translateY(24px);
-      -ms-transform: translateY(24px);
-          transform: translateY(24px);
+  transform: translateY(24px);
   padding: 24px 16px;
 }
 
@@ -610,15 +590,11 @@ body {
 }
 
 .popup-card-item-delete::before {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-      -ms-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .popup-card-item-delete::after {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-      -ms-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .popup-card-button {
@@ -705,11 +681,9 @@ body {
   padding: 12px 32px;
   background: #FCFCFC;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  -webkit-box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-          box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .button-white:hover {
@@ -756,9 +730,7 @@ body {
 .slider-buttons {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(2px, -42%);
-      -ms-transform: translate(2px, -42%);
-          transform: translate(2px, -42%);
+  transform: translate(2px, -42%);
   width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,8 +742,7 @@ body {
 
 .slider-button {
   padding: 9px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 26px;
@@ -828,9 +799,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 312px;
   height: 312px;
   background-color: #FFCBD8;
@@ -1024,8 +993,7 @@ body {
   background-color: #FF7799;
   border-radius: 16px;
   padding: 36px 206px 36px 36px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
@@ -1056,8 +1024,7 @@ body {
 
 .banner-item-button {
   background: #FCFCFC;
-  -webkit-box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-          box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
   font-weight: 700;
@@ -1066,8 +1033,7 @@ body {
   color: #2D3440;
   text-decoration: none;
   padding: 12px 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .banner-item-button:hover {
@@ -1119,8 +1085,7 @@ body {
   height: 281px;
   background: #FCFCFC;
   border-radius: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0 40px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1256,8 +1221,7 @@ body {
   border-radius: 16px;
   background-size: cover;
   padding: 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .advantages-main {
@@ -1265,8 +1229,7 @@ body {
   border-radius: 16px;
   height: 432px;
   padding: 56px 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .advantages-list {
@@ -1349,8 +1312,7 @@ body {
   background-image: url(../images/aside-ice-cream.jpg);
   border-radius: 16px;
   padding: 32.59px 235px 67.15px 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 570px;
   height: 224px;
   background-size: 110%;
@@ -1386,14 +1348,12 @@ body {
   border-radius: 16px;
   background-size: cover;
   padding: 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .subscription-form {
   padding: 26px 26px 28px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 16px;
   display: -webkit-box;
@@ -1430,8 +1390,7 @@ body {
   height: 48px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 14px 16px;
   font-size: 16px;
   line-height: 20px;
@@ -1541,8 +1500,7 @@ body {
   background-color: #ffffff;
   border-radius: 16px;
   background-position: 5px -136px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 64px 64px 64px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1575,12 +1533,10 @@ body {
   width: 500px;
   height: 406px;
   background: #FCFCFC;
-  -webkit-box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
-          box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   padding: 24px 40px 42px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -1625,9 +1581,7 @@ body {
   background-position: center;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(4px, -50%);
-      -ms-transform: translate(4px, -50%);
-          transform: translate(4px, -50%);
+  transform: translate(4px, -50%);
 }
 
 .tooltip-data {
@@ -1669,8 +1623,7 @@ body {
 
 .delivery-form-input {
   padding: 14px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   background: #FFFFFF;
   border: 1px solid #B9B9B9;
@@ -1770,8 +1723,8 @@ body {
   /* background-color: #FCFCFC; */
   background-color: #2d0b3d;
   background-image: url(../images/ice-creams.jpg);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -82px;
   border-radius: 16px;
@@ -1780,11 +1733,9 @@ body {
 
 .feedback-address {
   background-color: #FCFCFC;
-  -webkit-box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
-          box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 40px;
   font-style: normal;
 }
@@ -1902,8 +1853,7 @@ body {
   list-style: none;
   padding: 0 0 0 23px;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1944,9 +1894,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-24px, -50%);
-      -ms-transform: translate(-24px, -50%);
-          transform: translate(-24px, -50%);
+  transform: translate(-24px, -50%);
 }
 
 .footer-menu-item-text {
