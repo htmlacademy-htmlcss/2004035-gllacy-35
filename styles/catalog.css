@@ -6,21 +6,37 @@
 
 .crumbs {
   margin-bottom: 16px;
+  margin-top: 31px;
 }
 
 .crumbs-list {
   list-style: none;
   padding: 0;
+  margin-top: 0;
   display: flex;
 }
 
 .crumbs-item {
-  margin-right: 20px;
+  margin-right: 28px;
+  list-style-type: none;
+  position: relative;
 }
 
-.crumbs-item:not(:first-child) {
-  list-style-image: url(../images/chevrons-right.svg);
+.crumbs-item:not(:first-child):before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/chevrons-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top:50%;
+  transform: translate(-20px, -50%);
 }
+
+/* .crumbs-item:not(:first-child) {
+  list-style-image: url(../images/chevrons-right.svg);
+} */
 
 .crumbs-item:last-child {
   /* text-decoration: underline; */
@@ -41,7 +57,7 @@
   line-height: 46px;
   color: #2D3440;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 
@@ -88,6 +104,10 @@
   margin-bottom: 8px;
 }
 
+.filter-form-label-fat {
+  margin-left: 14px;
+}
+
 .filter-group {
   margin: 8px 0 0;
   background: rgba(252, 252, 252, 0.3);
@@ -96,7 +116,7 @@
 }
 
 .filter-group label:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 .filter-group-fat {
@@ -203,10 +223,16 @@
   display: flex;
   margin-left: 16px;
   margin-bottom: 8px;
+  align-items: center;
+  /* transform: translateY(-2px); */
+}
+
+.range-label {
+  transform: translate(4px, 0);
 }
 
 .filter-range {
-  width: 30px;
+  width: 29px;
   padding: 0;
   font: inherit;
   background-color: transparent;
@@ -230,12 +256,14 @@
   position: relative;
   border-radius: 1px;
   height: 2px;
+  /* top: -2px; */
   background-color: rgba(86, 92, 102, .3);
 }
 
 .range-bar {
   position: absolute;
   height: 2px;
+  /* top: -2px; */
   background-color: #565C66;
 }
 
@@ -287,7 +315,7 @@
 .filter-control {
   position: relative;
   /* display: block; */
-  padding-left: 24px;
+  padding-left: 23px;
 }
 
 .control-mark{
@@ -418,6 +446,7 @@
   line-height: 24px;
   margin-bottom: 8px;
   margin-top: 0;
+  text-align: center;
 }
 
 .card-item-text {
@@ -425,6 +454,8 @@
   line-height: 22px;
   margin-bottom: 16px;
   margin-top: 0;
+  text-align: center;
+  word-wrap: normal;
 }
 
 .card-item-img {

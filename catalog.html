@@ -156,8 +156,11 @@
 
               <div class="bilter-block-range">
                 <div class="filter-range-wrapper-inputs">
-                    Цена: <input class="filter-range" type="number" value="100" name="min-price">&#8381;
+                  Цена:
+                  <label class="range-label">
+                    <input class="filter-range" type="number" value="100" name="min-price">&#8381;
                     -&nbsp;<input class="filter-range" type="number" value="500" name="max-price">&#8381;
+                  </label>
                 </div>
 
                 <div class="range-ckale-wrapper">
@@ -177,7 +180,7 @@
             </fieldset>
 
             <fieldset class="filter-block filter-block-fat">
-              <legend class="filter-form-label">Жирность:</legend>
+              <legend class="filter-form-label filter-form-label-fat">Жирность:</legend>
                 <p class="filter-group filter-group-fat">
                   <label class="filter-form-group filter-control">
                     <input class="visually-hidden control-input" type="radio" name="filter-fat" value="0">
