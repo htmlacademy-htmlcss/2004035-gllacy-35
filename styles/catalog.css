@@ -270,14 +270,12 @@
   position: relative;
   border-radius: 1px;
   height: 2px;
-  /* top: -2px; */
   background-color: rgba(86, 92, 102, .3);
 }
 
 .range-bar {
   position: absolute;
   height: 2px;
-  /* top: -2px; */
   background-color: #565C66;
 }
 
@@ -435,7 +433,6 @@
 
 .card-item {
   width: 270px;
-  height: 281px;
   background: #FCFCFC;
   border-radius: 8px;
   box-sizing: border-box;
@@ -465,6 +462,8 @@
   margin-top: 0;
   text-align: center;
   word-wrap: normal;
+  -webkit-box-flex: 1;
+         flex-grow: 1;
 }
 
 .card-item-img {
