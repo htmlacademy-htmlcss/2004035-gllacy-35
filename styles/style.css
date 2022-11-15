@@ -91,6 +91,7 @@ body {
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   color: #FCFCFC;
+  font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -187,6 +188,7 @@ body {
   padding: 6px 16px 6px 38px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
+  font-family: "Inter";
   font-size: 14px;
 }
 
@@ -203,6 +205,7 @@ body {
 }
 
 .navigation-link-card-adget {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -271,12 +274,14 @@ body {
 }
 
 .navigation-link-phone {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
 
 .section-title {
+  font-family: "Inter";
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -306,6 +311,7 @@ body {
 }
 
 .popup-catalog {
+  font-family: "Inter";
   min-width: 135px;
   font-weight: 400;
   font-size: 14px;
@@ -435,6 +441,7 @@ body {
 }
 
 .popup-enter-title {
+  font-family: "Inter";
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -470,6 +477,7 @@ body {
 }
 
 .popup-enter-link {
+  font-family: "Inter";
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -497,6 +505,7 @@ body {
 }
 
 .popup-card-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -545,6 +554,7 @@ body {
 }
 
 .popup-card-name {
+  font-family: "Inter";
   margin: 0;
   margin-bottom: 4px;
   font-weight: 700;
@@ -554,6 +564,7 @@ body {
 }
 
 .popup-card-info {
+  font-family: "Inter";
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -561,6 +572,7 @@ body {
 }
 
 .popup-card-price {
+  font-family: "Inter";
   margin: 0;
   margin-right: 52px;
   font-weight: 700;
@@ -612,6 +624,7 @@ body {
 }
 
 .popup-card-total-price {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -629,6 +642,7 @@ body {
 }
 
 .popup-card-empty-text {
+  font-family: "Inter";
   margin: auto;
   font-weight: 700;
   font-size: 24px;
@@ -647,6 +661,7 @@ body {
 }
 
 .slider-text-title {
+  font-family: "Inter";
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -656,6 +671,7 @@ body {
 }
 
 .slider-text-text {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -664,6 +680,7 @@ body {
 }
 
 .slider-text-button {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
   line-height: 46px;
@@ -991,6 +1008,7 @@ body {
 }
 
 .banner-item-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -999,6 +1017,7 @@ body {
 }
 
 .banner-item-text {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1006,6 +1025,7 @@ body {
 }
 
 .banner-item-button {
+  font-family: "Inter";
   background: #FCFCFC;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: 4px solid rgba(252, 252, 252, 0.4);
@@ -1034,6 +1054,7 @@ body {
 }
 
 .banner-item-button:disabled {
+  font-family: "Inter";
   background: #E7E7E7;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   font-weight: 400;
@@ -1079,6 +1100,7 @@ body {
 }
 
 .product-item-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1088,6 +1110,7 @@ body {
 }
 
 .product-item-text {
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 16px;
@@ -1124,6 +1147,7 @@ body {
 }
 
 .product-item-footer-text {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1271,6 +1295,7 @@ body {
 }
 
 .advantages-item-text {
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
@@ -1303,6 +1328,7 @@ body {
 }
 
 .news-text {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1312,6 +1338,7 @@ body {
 }
 
 .news-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -1348,6 +1375,7 @@ body {
 }
 
 .subscription-text {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1374,6 +1402,7 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   padding: 14px 16px;
+  font-family: "Inter";
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
@@ -1450,6 +1479,7 @@ body {
   background: #B9B9B9;
   outline: 4px solid rgba(185, 185, 185, 0.3);
   color: #565C66;
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
 }
@@ -1489,6 +1519,7 @@ body {
 
 .delivery-block-text {
   margin: 0;
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
@@ -1506,6 +1537,7 @@ body {
 }
 
 .delivery-form-text {
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
@@ -1528,6 +1560,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1556,6 +1589,7 @@ body {
 }
 
 .tooltip-text {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1593,6 +1627,7 @@ body {
   border: 1px solid #B9B9B9;
   color: #2D3440;
   height: 48px;
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1700,6 +1735,7 @@ body {
 }
 
 .feedback-text {
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
@@ -1708,6 +1744,7 @@ body {
 }
 
 .feedback-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1722,6 +1759,7 @@ body {
 }
 
 .feedback-text-small {
+  font-family: "Inter";
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
@@ -1776,6 +1814,7 @@ body {
 
 .crumbs-link {
   text-decoration: none;
+  font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -1783,6 +1822,7 @@ body {
 }
 
 .crumbs-title {
+  font-family: "Inter";
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -1804,6 +1844,7 @@ body {
   -ms-grid-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
   grid-template-columns: 196px 24px 196px 24px 164px 16px 189px 14px;
   row-gap: 16px;
+  font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1918,6 +1959,7 @@ body {
       align-self: end;
   padding: 8px 52.5px;
           box-sizing: border-box;
+  font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -2069,6 +2111,7 @@ body {
 }
 
 .control-label {
+  font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -2174,6 +2217,7 @@ body {
 }
 
 .card-item-title {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -2183,6 +2227,7 @@ body {
 }
 
 .card-item-text {
+  font-family: "Inter";
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 16px;
@@ -2220,6 +2265,7 @@ body {
 }
 
 .card-item-footer-text {
+  font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -2330,6 +2376,7 @@ body {
 
 .pagination-item-link {
   text-align: center;
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   color: #2D3440;
@@ -2450,6 +2497,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-family: "Inter";
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
@@ -2480,6 +2528,7 @@ body {
   display: inline;
   text-decoration: none;
   color: #2D3440;
+  font-family: "Inter";
   font-size: 14px;
   line-height: 20px;
 }
@@ -2503,6 +2552,7 @@ body {
 
 .footer-copyright-text {
   margin: 0;
+  font-family: "Inter";
   font-size: 12px;
   line-height: 16px;
   color: #2D3440;
