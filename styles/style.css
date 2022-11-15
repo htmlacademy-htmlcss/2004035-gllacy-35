@@ -120,6 +120,15 @@ body {
 .navigation-item-search {
   width: 32px;
   height: 32px;
+  position: relative;
+}
+
+.navigation-item-search:hover .popup {
+  display: block;
+}
+
+.navigation-item-search:focus-within .popup {
+  display: block;
 }
 
 .navigation-link-search {
@@ -155,6 +164,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.navigation-item-catalog:hover .popup {
+  display: block;
+}
+
+.navigation-item-catalog:focus-within .popup {
+  display: block;
 }
 
 .navigation-list-button {
@@ -202,6 +219,18 @@ body {
   background-image: url(../images/entry.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.navigation-item-enter {
+  position: relative;
+}
+
+.navigation-item-enter:hover .popup {
+  display: block;
+}
+
+.navigation-item-enter:focus-within .popup {
+  display: block;
 }
 
 .navigation-link-card-adget {
@@ -496,6 +525,18 @@ body {
 
 .navigation-item:last-child {
   position: relative;
+}
+
+.navigation-item-card {
+  position: relative;
+}
+
+.navigation-item-card:hover .popup {
+  display: block;
+}
+
+.navigation-item-card:focus-within .popup {
+  display: block;
 }
 
 .popup-card {

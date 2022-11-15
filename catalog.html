@@ -61,28 +61,30 @@
               </form>
             </div>
             </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-enter">
             <a class="navigation-link navigation-link-enter" href="#">
               Вход
             </a>
             <div class="popup popup-enter">
               <p class="popup-enter-title">Личный кабинет</p>
               <form class="popup-enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden">
-                  <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <label class="visually-hidden" for="enter-email">
+                  Введите email
                 </label>
-                <label class="visually-hidden">
-                  <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                <input class="popup-enter-input input-email" id="enter-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <label class="visually-hidden" for="enter-password">
+                  Введите пароль
                 </label>
+                <input class="popup-enter-input popup-enter-input-last input-email" id="enter-password" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
                 <button class="popup-enter-button button" type="submit">Войти</button>
                 <div class="popup-enter-link-wrapper">
                   <a class="popup-enter-link" href="#">Забыли пароль?</a>
-                  <a class="popup-enter-link" href="#">Забыли пароль?</a>
+                  <a class="popup-enter-link" href="#">Регистрация</a>
                 </div>
               </form>
             </div>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-card">
             <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
               <span class="navigation-link-card-adget">2</span> товара
