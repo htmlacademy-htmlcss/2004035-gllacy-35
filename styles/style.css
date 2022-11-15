@@ -1192,21 +1192,21 @@ body {
   outline: none;
 }
 
-.product-item-footer-button:focus .product-item-footer-button-svg rect {
+.product-item-footer-button:focus rect {
   stroke: #2D3440;
   color: #FF2F64;
 }
 
-.product-item-footer-button:focus .product-item-footer-button-svg path {
+.product-item-footer-button:focus path {
   color: #FCFCFC;
 }
 
-.product-item-footer-button:disabled .product-item-footer-button-svg rect {
+.product-item-footer-button:disabled rect {
   stroke: #B9B9B9;
   color: #B9B9B9;
 }
 
-.product-item-footer-button:disabled .product-item-footer-button-svg path {
+.product-item-footer-button:disabled path {
   color: #C4C4C4;
 }
 
