@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/catalog.css">
     <link rel="icon" href="images/Favicon/favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -12,7 +11,7 @@
     <header class="page-header container">
       <nav class="navigation">
         <a href="index.html">
-          <img class="navigation-logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси Shop">
+          <img class="navigation-logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип Глейси Shop.">
         </a>
         <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item navigation-item-catalog">
@@ -93,7 +92,7 @@
               <p class="popup-card-title">Корзина</p>
               <ul class="popup-card-list">
                 <li class="popup-card-item">
-                  <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик">
+                  <img class="popup-card-item-img" src="images/balloons/raspberry.png" width="46" height="46" alt="Малиновый шарик.">
                   <div class="popup-card-item-wrapper">
                     <p class="popup-card-name">Малинка</p>
                     <p class="popup-card-info"><span>1</span>кг &#215; <span>310</span>&#8381;</p>
@@ -102,7 +101,7 @@
                   <button class="popup-card-item-delete" type="submit"></button>
                 </li>
                 <li class="popup-card-item">
-                  <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Малиновый шарик">
+                  <img class="popup-card-item-img" src="images/balloons/bubble-gum.png" width="46" height="46" alt="Бабл-гам шарик.">
                   <div class="popup-card-item-wrapper">
                     <p class="popup-card-name">Бабл-гам</p>
                     <p class="popup-card-info"><span>1,5</span>кг &#215; <span>320</span>&#8381;</p>
@@ -112,7 +111,7 @@
                 </li>
               </ul>
               <div class="popup-card-footer">
-                <button class="button popup-card-button">Оформить заказ</button>
+                <button class="button popup-card-button" type="submit">Оформить заказ</button>
                 <p class="popup-card-total-price">Итого: <span class="popup-card-total-number">790</span>&#8381;</p>
               </div>
             </div>
@@ -127,6 +126,7 @@
     </header>
 
     <main class="main-container container">
+      <h1 class="visually-hidden">Магазин Глейси-каталог товаров</h1>
 
       <section class="crumbs">
         <ol class="crumbs-list">
@@ -172,12 +172,12 @@
                 <div class="range-ckale-wrapper">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 32px; width: 72px">
-                      <button class="range-button range-button-min">
+                      <input class="range-button range-button-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button class="range-button range-button-max">
+                      </input>
+                      <input class="range-button range-button-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
+                      </input>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Малинка</h3>
             <p class="card-item-text">Сливочное мороженое с малиновым джемом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/raspberry.png" alt="Малиновый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/raspberry.png" alt="Малиновый шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">310 ₽/<span class="card-item-footer-small">кг</span></p>
               <a class="product-item-footer-button" href="#">
@@ -266,7 +266,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Фисташка</h3>
             <p class="card-item-text">Фисташковый пломбир с кусочками шоколада</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/pistachio.png" alt="Фисташковый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/pistachio.png" alt="Фисташковый шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">340 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -283,7 +283,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Черника</h3>
             <p class="card-item-text">Крем-брюле<br>с черничным джемом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/blueberries.png" alt="Черничный шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/blueberries.png" alt="Черничный шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">330 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -300,7 +300,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Бабл-гам</h3>
             <p class="card-item-text">Ванильный пломбир<br>со сладкой посыпкой</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/bubble-gum.png" alt="Бабл-гам шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/bubble-gum.png" alt="Бабл-гам шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">320 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -318,7 +318,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Ежевика</h3>
             <p class="card-item-text">Сливочное мороженое с ежевичным джемом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/blackberry.png" alt="Ежевичный шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/blackberry.png" alt="Ежевичный шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">330 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -335,7 +335,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Банан</h3>
             <p class="card-item-text">Сливочный пломбир<br>с банановым вкусом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/banana.png" alt="Банановый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/banana.png" alt="Банановый шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">340 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -352,7 +352,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Шоколадка</h3>
             <p class="card-item-text">Классический шоколадный пломбир</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/chocolate.png" alt="Шоколадный шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/chocolate.png" alt="Шоколадный шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">270 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -369,7 +369,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Клубничка</h3>
             <p class="card-item-text">Сливочный пломбир<br>с клубничным вкусом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/strawberry.png" alt="Клубничный шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/strawberry.png" alt="Клубничный шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">300 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -387,7 +387,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Лимон</h3>
             <p class="card-item-text">Освежающий лимонный сорбет</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/lemon.png" alt="Лимонный шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/lemon.png" alt="Лимонный шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">310 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -404,7 +404,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Ментол</h3>
             <p class="card-item-text">Сливочный пломбир<br>с ментоловым сиропом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/menthol.png" alt="Ментоловый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/menthol.png" alt="Ментоловый шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">320 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -421,7 +421,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Орешек</h3>
             <p class="card-item-text">Фисташковый пломбир с шоколадным сиропом</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/nut.png" alt="Ореховый шарик">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/nut.png" alt="Ореховый шарик.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">360 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -438,7 +438,7 @@
           <li class="card-item">
             <h3 class="card-item-title">Крем-брюле</h3>
             <p class="card-item-text">Классическое<br>крем-брюле</p>
-            <img class="card-item-img" width="168" height="168" src="images/balloons/creme-brulee.png" alt="Шарик крем-брюле">
+            <img class="card-item-img" width="168" height="168" src="images/balloons/creme-brulee.png" alt="Шарик крем-брюле.">
             <footer class="card-item-footer">
               <p class="card-item-footer-text">280 ₽/<span class="card-item-footer-small">кг</span></p>
               <span class="visually-hidden">В корзину</span>
@@ -458,7 +458,7 @@
           <section class="pagination">
             <h2 class="visually-hidden">Пагинация</h2>
             <a class="pagination-btn">
-              <img src="images/arrow-left.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка влево">
+              <img src="images/arrow-left.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка влево.">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
             <ol class="pagination-list">
@@ -479,7 +479,7 @@
               </li>
             </ol>
             <a class="pagination-btn">
-              <img src="images/arrow-right.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка вправо">
+              <img src="images/arrow-right.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка вправо.">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </section>
@@ -544,7 +544,7 @@
       <section class="footer-copyright">
       <h2 class="visually-hidden">Авторские права</h2>
         <a href="https://htmlacademy.ru/">
-          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="27" alt="htmlacademy">
+          <img src="images/logo-htmlacademy.svg" class="footer-copyright-logo" width="93" height="27" alt="htmlacademy.">
         </a>
         <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-copyright-link">.html academy</a> © 2021</p>
       </section>
