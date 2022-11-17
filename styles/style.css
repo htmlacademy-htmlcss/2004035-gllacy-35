@@ -2178,6 +2178,14 @@ body {
   background-color: #FCFCFC;
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+  outline-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:focus + .control-mark::before {
+  background-color: #FCFCFC;
+}
+
 .control-mark:disabled {
   outline-color: red;
 }
