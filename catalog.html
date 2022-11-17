@@ -55,34 +55,36 @@
               </svg>
             </a>
             <div class="popup popup-search">
-              <form action="post">
+              <form method="post" action="https://echo.htmlacademy.ru/">
                 <label class="visually-hidden" for="search"></label>
                 <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
               </form>
             </div>
             </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-enter">
             <a class="navigation-link navigation-link-enter" href="#">
               Вход
             </a>
             <div class="popup popup-enter">
               <p class="popup-enter-title">Личный кабинет</p>
               <form class="popup-enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden">
-                  <input class="popup-enter-input input-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <label class="visually-hidden" for="enter-email">
+                  Введите email
                 </label>
-                <label class="visually-hidden">
-                  <input class="popup-enter-input popup-enter-input-last input-email" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
+                <input class="popup-enter-input input-email" id="enter-email" type="email" name="user-name" placeholder="email@example.com" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <label class="visually-hidden" for="enter-password">
+                  Введите пароль
                 </label>
+                <input class="popup-enter-input popup-enter-input-last input-email" id="enter-password" type="password" name="user-passoword" placeholder="&bull;&bull;&bull;&bull;&bull;">
                 <button class="popup-enter-button button" type="submit">Войти</button>
                 <div class="popup-enter-link-wrapper">
                   <a class="popup-enter-link" href="#">Забыли пароль?</a>
-                  <a class="popup-enter-link" href="#">Забыли пароль?</a>
+                  <a class="popup-enter-link" href="#">Регистрация</a>
                 </div>
               </form>
             </div>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-card">
             <a class="navigation-link navigation-link-card" href="#">
               <span class="visually-hidden">Корзина</span>
               <span class="navigation-link-card-adget">2</span> товара
@@ -134,10 +136,10 @@
             <a href="index.html" class="crumbs-link">Главная</a>
           </li>
           <li class="crumbs-item">
-            <a href="" class="crumbs-link">Каталог</a>
+            <a href="#" class="crumbs-link">Каталог</a>
           </li>
           <li class="crumbs-item">
-            <a href="" class="crumbs-link">Сливочное мороженое</a>
+            <a href="#" class="crumbs-link">Сливочное мороженое</a>
           </li>
         </ol>
         <h2 class="crumbs-title">Сливочное мороженое</h2>
@@ -164,20 +166,21 @@
                 <div class="filter-range-wrapper-inputs">
                   Цена:
                   <div class="range-label">
-                    <input class="filter-range" type="number" value="100" name="min-price">&#8381;
-                    -&nbsp;<input class="filter-range" type="number" value="500" name="max-price">&#8381;
+                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                    <input class="filter-range" type="number" value="100" name="min-price" id="min-price">&#8381;
+                    -&nbsp;
+                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                    <input class="filter-range" type="number" value="500" name="max-price" id="max-price">&#8381;
                   </div>
                 </div>
 
                 <div class="range-ckale-wrapper">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 32px; width: 72px">
-                      <input class="range-button range-button-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </input>
-                      <input class="range-button range-button-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </input>
+                      <label class="visually-hidden" for="change-min-price">Изменить минимальную цену.</label>
+                      <input class="range-button range-button-min" type="button" id="change-min-price">
+                      <label class="visually-hidden" for="change-max-price">Изменить максимальную цену.</label>
+                      <input class="range-button range-button-max" type="button" id="change-max-price">
                     </div>
                   </div>
                 </div>
@@ -457,7 +460,7 @@
           <a class="cards-button button button-white" href="#">Показать еще</a>
           <section class="pagination">
             <h2 class="visually-hidden">Пагинация</h2>
-            <a class="pagination-btn">
+            <a class="pagination-btn" href="#">
               <img src="images/arrow-left.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка влево.">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
@@ -478,7 +481,7 @@
                 <a href="#" class="pagination-item-link" tabindex="-1">5</a>
               </li>
             </ol>
-            <a class="pagination-btn">
+            <a class="pagination-btn" href="#">
               <img src="images/arrow-right.svg" class="pagination-btn-img" width="16" height="16" alt="Стрелка вправо.">
               <span class="visually-hidden">Следующая страница</span>
             </a>
