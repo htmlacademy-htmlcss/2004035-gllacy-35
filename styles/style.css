@@ -2186,6 +2186,18 @@ body {
   opacity: .5;
 }
 
+.control-mark:focus {
+  outline-color: #FCFCFC;
+}
+
+/* .control-mark:focus-visible .control-mark::before {
+  background-color: #FCFCFC;
+} */
+
+.control-input[type="radio"]:checked + .control-mark:focus-visible:before {
+  background-color: #FCFCFC;
+}
+
 .control-mark-check{
   width: 16px;
   height: 16px;
@@ -2214,6 +2226,18 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark:hover::before {
+  background-image: url(../images/checkbox-check-hover.svg);
+}
+
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  background-image: url(../images/checkbox-hover.svg);
+}
+
+.control-input[type="checkbox"]:focus-visible:checked + .control-mark {
+  background: none;
+}
+
+.control-input[type="checkbox"]:focus-visible:checked + .control-mark::before {
   background-image: url(../images/checkbox-check-hover.svg);
 }
 

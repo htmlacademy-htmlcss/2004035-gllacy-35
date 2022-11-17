@@ -166,20 +166,21 @@
                 <div class="filter-range-wrapper-inputs">
                   Цена:
                   <div class="range-label">
-                    <input class="filter-range" type="number" value="100" name="min-price">&#8381;
-                    -&nbsp;<input class="filter-range" type="number" value="500" name="max-price">&#8381;
+                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                    <input class="filter-range" type="number" value="100" name="min-price" id="min-price">&#8381;
+                    -&nbsp;
+                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                    <input class="filter-range" type="number" value="500" name="max-price" id="max-price">&#8381;
                   </div>
                 </div>
 
                 <div class="range-ckale-wrapper">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 32px; width: 72px">
-                      <input class="range-button range-button-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </input>
-                      <input class="range-button range-button-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </input>
+                      <label class="visually-hidden" for="change-min-price">Изменить минимальную цену.</label>
+                      <input class="range-button range-button-min" type="button" id="change-min-price">
+                      <label class="visually-hidden" for="change-max-price">Изменить максимальную цену.</label>
+                      <input class="range-button range-button-max" type="button" id="change-max-price">
                     </div>
                   </div>
                 </div>
@@ -192,22 +193,22 @@
                 <p class="filter-group filter-group-fat">
                   <label class="filter-form-group filter-control">
                     <input class="visually-hidden control-input" type="radio" name="filter-fat" value="0">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">0%</span>
                   </label>
                   <label class="filter-form-group filter-control">
                     <input class="visually-hidden control-input" type="radio" name="filter-fat" value="-10" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">до 10%</span>
                   </label>
                   <label class="filter-form-group filter-control">
                     <input class="visually-hidden control-input" type="radio" name="filter-fat" value="-30">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">до 30%</span>
                   </label>
                   <label class="filter-form-group filter-control">
                     <input class="visually-hidden control-input" type="radio" name="filter-fat" value="+30">
-                    <span class="control-mark"></span>
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">выше 30%</span>
                   </label>
                 </p>
