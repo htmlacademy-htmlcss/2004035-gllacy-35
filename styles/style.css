@@ -64,8 +64,19 @@ body {
   line-height: 22px;
   margin: 0;
 
-  background-color: #FEAFC3;
   color: #2D3440
+}
+
+.background-color-pink {
+  background-color: #FEAFC3;
+}
+
+.background-color-blue {
+  background-color: #69A9FF;
+}
+
+.background-color-yellow {
+  background-color: #FCC850;
 }
 
 .container {
@@ -327,7 +338,7 @@ body {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 4px;
   box-sizing: border-box;
-  transform: translateY(14px);
+  transform: translateY(4px);
   display: none;
 }
 
@@ -404,7 +415,7 @@ body {
   z-index: 1;
   right: 0;
   top: 16px;
-  transform: translateY(24px);
+  transform: translateY(16px);
   padding: 24px 16px;
 }
 
@@ -765,6 +776,11 @@ body {
 .slider-text {
   margin-left: 70px;
   margin-top: 6px;
+  display: none;
+}
+
+.slider-text-active {
+  display: block;
 }
 
 .slider-block {
